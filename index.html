@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenido</title>
+</head>
+<style>
+	body{
+		background-image: url("fondo.jpg")
+	}
+	.cb{
+		position: absolute;
+		left: 20%;
+		top: 35%;
+		width: 55%;
+		height: 15%;
+		color: white;
+		font-family: titulop1;
+		font-size: 700%;
+		-webkit-text-stroke: 2px white;
+	    color: #FCC5FF;
+	}
+	.cj{
+		position: absolute;
+		left: 40%;
+		top: 60%;
+		width: 15%;
+		height: 8%;
+		color: black;
+		background: white;
+	border-style: double;
+	font-family: titulop2;
+	font-size: 25px;
+	animation-name: input;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	}
+	@font-face{
+	font-family: titulop1;
+	src: url(titulo1.otf);
+}
+	@font-face{
+	font-family: titulop2;
+	src: url(titulo2.otf);
+}
+@keyframes input{
+	0%{ border-color: #FD1532; }
+	16%{ border-color: #FAED27; }
+	32%{ border-color: #55FF00; }
+	48%{ border-color: #00FFC5; }
+	64%{ border-color: #0036FF; }
+	80%{ border-color: #4D00FF; }
+	96%{ border-color: #F300FF; }
+}
+</style>
+<body>
+<audio src="soni2.mp3" id="son"></audio>
+<div class="cb"><center>Bienvenido</center></div>
+<a href="https://laura029.github.io/Piedra-papel-trijera/">
+<div class="cj" ><center>Jugar</center></div></a>
+<script>
+	crono=setInterval(sonido,500);
+	function sonido(){
+		son.play();
+	}
+</script>
+</body>
+</html>
